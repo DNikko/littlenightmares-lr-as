@@ -1,4 +1,4 @@
-state("LittleNightmares") // Shitty Version for testing.
+state("LittleNightmares")
 {
 	float xCoord : 0x33F9470, 0x30, 0x3C0, 0x160, 0x144;
 	float yCoord : 0x33F9470, 0x30, 0x3C0, 0x160, 0x140;
