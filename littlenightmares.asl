@@ -109,7 +109,7 @@ if (current.levelID == 1) {
 						return true;
 	}
 	
-	current.elevatorPassed = old.xCoord < -1180 && current.xCoord >= -1180 && current.yCoord > -325 && current.yCoord < 50  && current.zCoord < -5600 && current.zCoord > -6000 && (vars.splits[3] == true || !settings["split3"]);	
+	current.elevatorPassed = old.xCoord < -1180 && current.xCoord >= -1180 && current.yCoord > -325 && current.yCoord < 150  && current.zCoord < -5600 && current.zCoord > -6000 && (vars.splits[3] == true || !settings["split3"]);	
 	if(!old.elevatorPassed && current.elevatorPassed && vars.splits[4] != true && settings["split4"]) {
    						vars.splits[4] = true;
 						return true;
