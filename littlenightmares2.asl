@@ -57,6 +57,6 @@ isLoading
 
 gameTime
 {
-	if (old.levelTime > current.levelTime) { vars.AllGameTime += old.levelTime; }
-	if (current.levelTime > 0 && vars.runStarted) { return TimeSpan.FromSeconds(vars.AllGameTime+current.levelTime-vars.startGameTime); } else if (!vars.runStarted) { return TimeSpan.FromSeconds(0); }
+	if (old.levelTime > current.levelTime && old.levelID != 2 && old.levelID != 0) { vars.AllGameTime += old.levelTime; }
+	if (current.levelTime > 0 && vars.runStarted && current.levelID != 2 && current.levelID != 0) { return TimeSpan.FromSeconds(vars.AllGameTime+current.levelTime-vars.startGameTime); } else if (!vars.runStarted) { return TimeSpan.FromSeconds(0); } else if (current.levelTime > 0 && vars.runStarted && (current.levelID == 2 || current.levelID == 0)) { return TimeSpan.FromSeconds(vars.AllGameTime-vars.startGameTime);  }
 }
