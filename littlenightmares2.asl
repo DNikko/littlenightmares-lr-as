@@ -20,8 +20,6 @@ state("Little Nightmares II", "Current")
 init
 {
 if (modules.First().ModuleMemorySize == 0x4510000) { version = "Release"; } else if (modules.First().ModuleMemorySize == 0x4502000) { version = "Current"; }
-bool[] splitsTemp = new bool[95];
-vars.splits = splitsTemp; 
 }
 
 update
