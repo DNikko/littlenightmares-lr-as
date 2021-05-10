@@ -42,7 +42,6 @@ settings.Add("split9", false, "Split at Frog");
 settings.Add("split10", false, "Split at Teacher Escaped 3");
 settings.Add("split11", false, "Split at TV Moment 2");
 settings.Add("split12", false, "Split at Elevator");
-settings.Add("split13", false, "Split at Doctor Escaped");
 settings.Add("split14", false, "Split at Incinerator");
 settings.Add("split15", false, "Split at Elevator Up");
 settings.Add("split16", false, "Split at TV Moment 3");
@@ -75,7 +74,6 @@ current.frogKey = false;
 current.teacherEscapedThree = false;
 current.tvMomentTwo = false;
 current.elevatorHospital = false;
-current.doctorEscapedOne = false;
 current.burnDoctor = false;
 current.elevatorUp = false;
 current.tvMomentThree = false;
@@ -177,14 +175,6 @@ if (current.levelID == 26) {
 						return true;
 	}
 	
-	current.doctorEscapedOne = old.zCoord < -5264 && current.zCoord >= -5264 && current.yCoord < -12410 && current.yCoord > -12630 && current.xCoord > 11020 && current.xCoord < 11195;	
-	if(!old.doctorEscapedOne && current.doctorEscapedOne && vars.splits[13] != true && settings["split13"]) {
-   						vars.splits[13] = true;
-						return true;
-	}
-	
-			
-
 	current.burnDoctor = current.xCoord <= 29625 && old.xCoord > 29625 && current.zCoord < -4600;	
 	if(!old.burnDoctor && current.burnDoctor && vars.splits[14] != true && settings["split14"]) {
    						vars.splits[14] = true;
