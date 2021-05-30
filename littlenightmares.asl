@@ -48,7 +48,7 @@ settings.Add("split3", true, "Split at Trap");
 settings.Add("split4", true, "Split at Elevator");
 settings.Add("split5", true, "Split at TV Room");
 settings.Add("split6", false, "Split at Rat");
-settings.Add("split7", true, "Split at Rafters");
+settings.Add("split7", false, "Split at Rafters");
 settings.Add("split8", true, "Split at Freezer");
 settings.Add("split9", true, "Split at Bottle");
 }
