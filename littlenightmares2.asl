@@ -29,28 +29,28 @@ update
 
 startup
 {
-settings.Add("split0", false, "Split at Chapter Change");
-settings.Add("split1", false, "Split at House Entered");
+settings.Add("split0", true, "Split at Chapter Change");
+settings.Add("split1", true, "Split at House Entered");
 settings.Add("split2", false, "Split at Hut Escaped");
-settings.Add("split3", false, "Split at TV Moment 1");
-settings.Add("split4", false, "Split at Six Kidnapped");
-settings.Add("split5", false, "Split at Elevator");
-settings.Add("split6", false, "Split at Teacher Escaped 1");
-settings.Add("split7", false, "Split at Chess Puzzle");
-settings.Add("split8", false, "Split at Teacher Escaped 2");
-settings.Add("split9", false, "Split at Frog");
-settings.Add("split10", false, "Split at Teacher Escaped 3");
-settings.Add("split11", false, "Split at TV Moment 2");
-settings.Add("split12", false, "Split at Elevator");
+settings.Add("split3", true, "Split at TV Moment 1");
+settings.Add("split4", true, "Split at Six Kidnapped");
+settings.Add("split5", true, "Split at Elevator");
+settings.Add("split6", true, "Split at Teacher Escaped 1");
+settings.Add("split7", true, "Split at Chess Puzzle");
+settings.Add("split8", true, "Split at Teacher Escaped 2");
+settings.Add("split9", true, "Split at Frog");
+settings.Add("split10", true, "Split at Teacher Escaped 3");
+settings.Add("split11", true, "Split at TV Moment 2");
+settings.Add("split12", true, "Split at Elevator");
 settings.Add("split14", false, "Split at Incinerator");
-settings.Add("split15", false, "Split at Elevator Up");
-settings.Add("split16", false, "Split at TV Moment 3");
-settings.Add("split18", false, "Split at Balcony Skip");
-settings.Add("split19", false, "Split at TV");
+settings.Add("split15", true, "Split at Elevator Up");
+settings.Add("split16", true, "Split at TV Moment 3");
+settings.Add("split18", true, "Split at Balcony Skip");
+settings.Add("split19", true, "Split at TV");
 settings.Add("split20", false, "Split at Chair Room Exit");
-settings.Add("split21", false, "Split at Cart Skip");
-settings.Add("split22", false, "Split at Thin Man Escaped");
-settings.Add("split24", false, "Split at Big Six");
+settings.Add("split21", true, "Split at Cart Skip");
+settings.Add("split22", true, "Split at Thin Man Escaped");
+settings.Add("split24", true, "Split at Big Six");
 }
 
 start
