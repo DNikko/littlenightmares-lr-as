@@ -24,10 +24,23 @@ state("LittleNightmares", "gog")
 	int levelID : 0x317C940, 0x1C8, 0x74;
 	int mirrorCounter : 0x3401158, 0x0, 0x2C0, 0x188, 0xF8;
 }
+state("Atlas-Win64-Shipping", "enhanced")
+{
+	float xCoord : 0x4CC1DB0, 0x0, 0xA0, 0x2B8, 0x1D4;
+	float yCoord : 0x4CC1DB0, 0x0, 0xA0, 0x2B8, 0x1D0;
+	float zCoord : 0x4CC1DB0, 0x0, 0xA0, 0x2B8, 0x1D8;
+
+	int ominousLight : 0x4CCE378, 0x578, 0x160, 0x20C;
+	int ominousLightRat : 0x3411508, 0x7A8, 0x8, 0x118, 0xD8, 0xDC;
+	
+	float levelTime : 0x4CCE378, 0x40, 0x430, 0x120, 0xE0;
+	int levelID : 0x4CCAA20, 0x280, 0x38, 0x8C;
+	int mirrorCounter : 0x4CBF8C8, 0x0, 0x168, 0x158, 0xD8;
+}
 
 init
 {
-if (modules.First().ModuleMemorySize == 0x36AC000) { version = "gog"; } else if (modules.First().ModuleMemorySize == 0x36AB000) { version = "steam"; }
+if (modules.First().ModuleMemorySize == 0x36AC000) { version = "gog"; } else if (modules.First().ModuleMemorySize == 0x36AB000) { version = "steam"; } else if (modules.First().ModuleMemorySize == 0x5190000) { version = "enhanced"; }
 bool[] splitsTemp = new bool[95];
 vars.splits = splitsTemp; 
 vars.runStarted = false; // Hack to make sure real time stays consistent with current rules.
